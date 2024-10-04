@@ -1,27 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.Header{
+  background-color: rgb(255, 116, 116);
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+  border-radius: 2px;
+  height: 50px;
+}
+.header-buttons{
+  color: blanchedalmond;
+  text-decoration: solid;
+  display: flex;
+  justify-content:  space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+.HEAD{
+  font-size: 20px;
+  color: deepskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  height: 400px;
+  background-color: lightcyan;
+}
+#home:hover{
+  color: powderblue;
+}
+#job:hover{
+  color: powderblue;
+}
+#cont:hover{
+  color: powderblue;
+}
+#about:hover{
+  color: powderblue;
+}
+#logo{
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  padding-left: 20px;
+  color: cornsilk;
+  font-size: larger;
+}
+.foot{
+  background-color: seagreen;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home{
+  height: 350px;
+  background-color: oldlace;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  color: darkslategrey;
+  font-size: larger;
+  font-weight: 400;
+  padding: 20px;
+}
+img{
+  height:150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 40px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
